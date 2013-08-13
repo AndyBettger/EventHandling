@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends Activity implements OnClickListener {
 
@@ -26,8 +27,8 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
-		
+		TextView text = (TextView)findViewById(R.id.textmessage);
+		text.setText("BUTTON HAS BEEN CLICKED. EVENT PROCESSED");
 	}
 
 }
