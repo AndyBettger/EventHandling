@@ -37,7 +37,7 @@ public class MainActivity extends Activity implements OnClickListener, OnLongCli
 	public boolean onLongClick(View arg0) {
 		TextView text = (TextView)findViewById(R.id.textmessage);
 		text.setText("BUTTON HAS BEEN HELD. OnLongClick EVENT PROCESSED");
-		return false;
+		return true;
 	}
 
 }
