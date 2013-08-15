@@ -41,7 +41,7 @@ public class MainActivity extends Activity implements OnClickListener, OnLongCli
 		return true;
 	}
 	
-	public boolean onKeyDown(int keyCode, keyEvent event) {
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (keyCode == KeyEvent.KEYCODE_DPAD_CENTER){
 			textUpdate();
 			return true;
