@@ -2,6 +2,7 @@ package fifth.example.eventhandling;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -39,5 +40,17 @@ public class MainActivity extends Activity implements OnClickListener, OnLongCli
 		text.setText("BUTTON HAS BEEN HELD. OnLongClick EVENT PROCESSED");
 		return true;
 	}
-
+	
+	public boolean onKeyDown(int keyCode, keyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_DPAD_CENTER){
+			textUpdate();
+			return true;
+		}
+			return false;
+	}
+	
+	public void textUpdate() {
+		TextView text = (TextView)findViewById(R.id.textmessage);
+		text.setText("CENTRE KEYPAD BUTTON PRESSED");
+	}
 }
