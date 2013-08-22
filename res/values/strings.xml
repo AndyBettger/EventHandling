@@ -6,5 +6,7 @@
     <string name="button_caption">CLICK TO GENERATE EVENT</string>
     <string name="text_message">NO EVENT RECEIVED YET</string>
     <string name="context_button_caption">Long-Click for Context Menu</string>
-
+    <string name="third_button_caption">Third Button</string>
+    <string name="fourth_button_caption">Fourth Button</string>
+    
 </resources>
