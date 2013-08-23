@@ -25,6 +25,10 @@ public class MainActivity extends Activity implements OnClickListener, OnLongCli
 		button.setOnLongClickListener(this);
 		Button Button2 = (Button) findViewById(R.id.button2);
 		registerForContextMenu(Button2);
+		Button Button3 = (Button) findViewById(R.id.button3);
+		registerForContextMenu(Button3);
+		Button Button4 = (Button) findViewById(R.id.button4);
+		registerForContextMenu(Button4);
 	}
 
 	@Override
