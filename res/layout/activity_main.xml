@@ -15,7 +15,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:text="@string/button_caption" />
+        android:text="@string/button_caption"
+        android:nextFocusUp="@+id/button4"
+        android:nextFocusDown="@+id/button2" />
     
     <TextView
         android:id="@+id/textmessage"
@@ -33,6 +35,30 @@
         android:layout_below="@+id/textmessage"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:text="@string/context_button_caption" />
+        android:text="@string/context_button_caption"
+        android:nextFocusUp="@+id/button1"
+        android:nextFocusDown="@+id/button3" />
 
+	<Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/third_button_caption"
+        android:nextFocusUp="@+id/button2"
+        android:nextFocusDown="@+id/button4" />
+
+	<Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/fourth_button_caption"
+        android:nextFocusUp="@+id/button3"
+        android:nextFocusDown="@+id/button1" />
+    
 </RelativeLayout>
