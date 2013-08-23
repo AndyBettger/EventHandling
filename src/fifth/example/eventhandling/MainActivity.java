@@ -72,7 +72,7 @@ public class MainActivity extends Activity implements OnClickListener, OnLongCli
 	}
 	
 	public void contextFunction1(int id) {
-		Toast.makeText(this, "function 1 invoked!", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, "function 1 invoked!", Toast.LENGTH_LONG).show();
 	}
 	
 	public void contextFunction2(int id) {
